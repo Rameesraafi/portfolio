@@ -1,0 +1,605 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+body {
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(315deg,  rgb(2, 10, 22) 2%, rgb(2, 8, 17) 30%);
+  animation: gradient 20s ease infinite;
+  background-size: 600% 600%;
+  background-attachment: fixed;
+
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 0%;
+  }
+  50% {
+      background-position: 100% 100%;
+  }
+  100% {
+      background-position: 0% 0%;
+  }
+}
+
+.wave {
+  background: rgba(20, 59, 39, 0.384);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 7em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.wave:nth-of-type(2) {
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
+}
+
+.wave:nth-of-type(3) {
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
+}
+
+@keyframes wave {
+  2% {
+      transform: translateX(1);
+  }
+
+  25% {
+      transform: translateX(-25%);
+  }
+
+  50% {
+      transform: translateX(-50%);
+  }
+
+  75% {
+      transform: translateX(-25%);
+  }
+
+  100% {
+      transform: translateX(1);
+  }
+}
+
+
+
+  
+.nav-item{
+  padding: 05px;
+  font-family: poppins;
+}
+
+.nav-media{
+  color: aliceblue;
+  padding: 15px;
+}
+
+
+.nav-media:hover{
+  color: rgb(5, 124, 104)!important;
+}
+
+
+.nav-link:hover{
+  color: rgb(5, 124, 104)!important;
+  
+
+}
+ 
+.name span{
+  color: aliceblue;
+  
+
+}
+.name{
+  padding-top: 150px;
+  color: aliceblue;
+  font-family:poppins;
+  font-weight :400;
+}
+
+.bio{
+  font-size: 15px;
+  color: rgb(5, 124, 104)!important;
+  font-weight: bold;
+  font-family:poppins;
+}
+
+.text-white{
+  font-family: poppins;
+  font-size: 18px;
+}
+
+.image{
+  height: 100%;
+  width: 100%;
+  float: right;
+  
+}
+
+.cv{
+  font-size: medium;
+  color: aliceblue;
+  text-decoration: none;
+  background-color:rgb(0, 78, 65)!important;
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-weight: bold;
+  font-family:poppins;
+}
+
+.cv:hover{
+  color: rgb(163, 182, 175);
+}
+
+
+
+.topic{
+  font-weight: bold;
+  padding-left: 20px;
+  color: aliceblue;
+  font-family: poppins;
+  
+
+}
+
+.view{
+
+background-color:  rgb(2, 8, 17)!important;
+backdrop-filter: blur(irem)!important;
+box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5)!important;
+border: 2px solid transparent!important;
+border-color:rgb(5, 124, 104)!important;
+border-radius: 5px;
+
+}
+
+.card-title{
+  color:rgb(5, 124, 104)!important;
+  text-align: center;
+  font-weight: bold;
+  font-family: poppins;
+  padding-top: 5%;
+}
+
+.card-text{
+  text-align: center;
+  color: aliceblue;
+  font-size:x-small;
+  font-family: poppins;
+}
+
+
+.pt-5{
+  text-align: center!important;
+}
+
+.btn{
+  border-radius: 5px!important;
+  font-weight: bold!important;
+  font-family: poppins;
+}
+
+.sub-topic{
+  padding-left: 20px;
+  padding-top: 50px;
+  font-weight: 300;
+  color:rgb(5, 124, 104)!important;
+  font-family: poppins;
+  font-weight: 600;
+  
+}
+
+.skills{
+  padding-top: 50px!important;
+  color: aliceblue;
+  font-weight: bold;
+  font-family: poppins;
+
+}
+
+.sub-skills{
+  
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-weight: 300;
+  color:rgb(5, 124, 104)!important;
+  font-family: poppins;
+  font-weight: 600;
+  padding-left: 10px;
+}
+
+.subb-skills{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-weight: 300;
+  color:rgb(5, 124, 104)!important;
+  font-family: poppins;
+  font-weight: 600;
+
+}
+
+.subbb-skills{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  font-weight: 300;
+  color:rgb(5, 124, 104)!important;
+  font-family: poppins;
+  font-weight: 600;
+
+}
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.Outbox{
+  width: 400px;
+  height: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: black;
+}
+
+.InnerBox{
+  width: 80%;
+  height: 15px;
+
+  border-radius: 10px;
+  background: linear-gradient(45deg,#1fe6ff, #673AB7);
+  animation: HTML 10s ease-in-out forwards;
+}
+
+.d-flex{
+  align-items: baseline;
+  font-family: poppins;
+  color:aliceblue;
+  font-size: 25px;
+}
+
+.Outbox2{
+  width: 400px;
+  height: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+  border-radius: 10px;
+  background: black;
+}
+
+.InnerBox2{
+  width: 60%;
+  height: 15px;
+
+  border-radius: 10px;
+  background: linear-gradient(45deg,#1fe6ff, #673AB7);
+  animation: CSS 10s ease-in-out forwards;
+}
+
+.Outbox3{
+  width: 400px;
+  height: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: black;
+}
+
+.InnerBox3{
+  width: 60%;
+  height: 15px;
+
+  border-radius: 10px;
+  background: linear-gradient(45deg,#1fe6ff, #673AB7);
+  animation: Java 10s ease-in-out forwards;
+}
+
+.Outbox4{
+  width: 400px;
+  height: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: black;
+}
+
+.InnerBox4{
+  width: 70%;
+  height: 15px;
+
+  border-radius: 10px;
+  background: linear-gradient(45deg,#1fe6ff, #673AB7);
+  animation: React 10s ease-in-out forwards;
+}
+
+.Outbox5{
+  width: 400px;
+  height: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: black;
+}
+
+.InnerBox5{
+  width: 60%;
+  height: 15px;
+
+  border-radius: 10px;
+  background: linear-gradient(45deg,#1fe6ff, #673AB7);
+  animation: React 10s ease-in-out forwards;
+}
+
+.Outbox6{
+  width: 400px;
+  height: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: black;
+}
+
+.InnerBox6{
+  width: 60%;
+  height: 15px;
+
+  border-radius: 10px;
+  background: linear-gradient(45deg,#1fe6ff, #673AB7);
+  animation: React 10s ease-in-out forwards;
+}
+
+
+.Outbox7{
+  width: 400px;
+  height: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: black;
+}
+
+.InnerBox7{
+  width: 60%;
+  height: 15px;
+
+  border-radius: 10px;
+  background: linear-gradient(45deg,#1fe6ff, #673AB7);
+  animation: React 10s ease-in-out forwards;
+}
+
+
+.Outbox7{
+  width: 400px;
+  height: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: black;
+}
+
+.InnerBox7{
+  width: 60%;
+  height: 15px;
+
+  border-radius: 10px;
+  background: linear-gradient(45deg,#1fe6ff, #673AB7);
+  animation: React 10s ease-in-out forwards;
+}
+
+
+.Outbox8{
+  width: 400px;
+  height: 15px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 5px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  background: black;
+}
+
+.InnerBox8{
+  width: 60%;
+  height: 15px;
+
+  border-radius: 10px;
+  background: linear-gradient(45deg,#1fe6ff, #673AB7);
+  animation: React 10s ease-in-out forwards;
+}
+
+
+ @keyframes HTML{
+  0%{
+      width: 0;
+  }
+  100%{
+      width: 80%;
+
+  }
+ }
+
+ @keyframes CSS{
+  0%{
+      width: 0;
+  }
+  100%{
+      width: 60%;
+
+  }
+ }
+
+ @keyframes Java{
+  0%{
+      width: 0;
+  }
+  100%{
+      width: 80%;
+
+  }
+ }
+
+ @keyframes React{
+  0%{
+      width: 0;
+  }
+  100%{
+      width: 70%;
+
+  }
+ }
+
+ @keyframes React{
+  0%{
+      width: 0;
+  }
+  100%{
+      width: 60%;
+
+  }
+ }
+
+ .tools{
+  padding-top: 50px!important;
+  color: aliceblue;
+  font-weight: bold;
+  font-family: poppins;
+
+}
+
+.img-fluid{
+  display: inline;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  align-items: center!important;
+}
+
+.paragraph{
+  font-size: 20px;
+  font-family: poppins;
+  color: aliceblue;
+  margin-top: 5%!important;
+  padding-left: 20px;
+}
+
+
+
+.education{
+  font-weight: bold;
+  padding-top: 50px;
+  color: aliceblue;
+  font-family: poppins;
+  padding-bottom: 50px;
+}
+
+.card-body{
+  background-color:  rgb(2, 8, 17)!important;
+  backdrop-filter: blur(irem)!important;
+  box-shadow: 1.3rem 1.3rem 1.3rem rgba(0, 0, 0, 0.5)!important;
+  border: 2px solid transparent!important;
+  border-color:rgb(5, 124, 104)!important;
+  border-radius: 5px;
+
+}
+
+.card-topic{
+  color:aliceblue!important;
+  font-family: poppins;
+  font-weight: bold!important;
+  margin-left: 11%!important;
+  margin-top: 15px;
+}
+
+.card-subtitle{
+  color:rgb(5, 124, 104)!important;
+  font-family: poppins;
+  margin-left: 11%!important;
+  padding-bottom: 5px;
+}
+
+.year{
+  color: aliceblue;
+  font-family: poppins;
+  margin-left: 11%!important;
+}
+
+.rounded{
+  height: 100px;
+  width: 100px;
+  float: left!important;
+}
+
+.container{
+  margin-top: 20px;
+}
+
+.about-me{
+  padding-top: 50px!important;
+  color: aliceblue;
+  font-weight: bold;
+  font-family: poppins;
+
+}
+
+.myself{
+
+  font-size: 20px;
+  font-family: poppins;
+  color: aliceblue;
+  margin-top: 5%!important;
+  
+
+}
+
+.contact{
+
+  padding-top: 50px!important;
+  color: aliceblue;
+  font-weight: bold;
+  font-family: poppins;
+
+
+}
+
+.reach{
+  margin-top: 50px!important;
+  color: aliceblue;
+  list-style: none;
+}
+
+.hr {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: inset;
+  border-width: 2px;
+}
